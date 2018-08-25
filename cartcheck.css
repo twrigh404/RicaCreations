@@ -1,0 +1,218 @@
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+.main-nav {
+  z-index: 900;
+  width: 100%;
+  margin: auto;
+  
+}
+
+
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background: #E80C94;
+  width: 100%;
+  
+}
+
+.navbar_left {
+  order: 2;
+  
+  
+}
+.navbar_right {
+  position: absolute;
+  
+ 
+  
+  
+}
+
+
+.navbar_right h1 {
+  display: inline;
+  font-family: 'Dancing Script', cursive;
+  position: absolute;
+  left: 0;
+  width: 200px;
+ 
+}
+
+.navlinks {
+  margin-top: 10px;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  font-size: 1em;
+  background-color: #E80C94;
+  list-style: none;
+  border-radius: 5px;
+  
+  
+  
+}
+.navlinks a:visited {
+  color: black;
+}
+.navlinks a:active {
+  color: black;
+}
+.navlinks a:link {
+  color: black;
+  text-decoration: none;
+}
+.navlinks a {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  transition: all .2s ease ;
+  margin-right: 10px;
+  box-shadow: 2px 0px 5px, 2px 4px black;
+  background-color: #E80C94;
+  border-radius: 10px;
+}
+.navlinks a:hover {
+  box-shadow: 0px 0px 1px, 2px 1px black;
+}
+
+
+.navlinks:last-child {
+  margin-right: 90px;
+}
+
+.mobileone {
+  visibility: hidden;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.cartitem {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.cartcontainer {
+  border: 1px solid black;
+}
+
+.cartitem {
+  border: 1px solid black;
+  display: flex;
+  justify-content:flex-start;
+}
+.is_hidden {
+   display: none;
+  visibility: hidden;
+}
+
+.nameDescription {
+  margin-left: 23%;
+}
+.itemName {
+  margin-left: 20%;
+  
+}
+.priceAmount {
+  margin-left: 21%;
+  margin-right: 20%;
+}
+.quantity {
+  border: 1px solid black;
+  margin-left: 20%;
+}
+.price {
+  border: 1px solid black;
+  margin-left: 20%;
+}
+
+#checkout {
+  margin-left: 70%;
+}
+
+@media (max-width: 700px) { 
+  .navbar_right {
+   font-size: .7em;
+   order: 1;
+   
+  }
+  .nav_container {
+    height: 40px;   
+  }
+  
+  
+  .mobileone {
+    order: 2;
+    font-size: 2em;
+    visibility: visible;
+    position: absolute;
+    right: 0;
+    z-index: 900;
+    
+    
+  }
+
+   .contact {
+    width: 100%;
+    height: 600px;
+    position: relative; 
+}
+  .navbar_left {
+    display: block;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 28px;
+    order: 3;
+    padding: 0px;
+}
+
+  .navlinks {
+    display: block;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 22px;
+  }
+  .navlinks a {
+    padding: 10px 50px 10px;
+    margin-top: 15px;
+
+   
+    
+  }
+ 
+  
+  
+}
+  
+
+
+  
+
+@media (min-width: 700px) {
+  .navlinks {
+    display: inline;
+    visibility: visible;
+    
+  }
+.navlinks a{
+  display: inline;
+  visibility: visible;
+  }
+ 
+  .mobileone {
+  visibility:hidden;
+  }
+
+  
+  
+}  
